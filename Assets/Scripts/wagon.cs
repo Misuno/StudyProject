@@ -12,20 +12,30 @@ public class wagon : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		var pos = transform.position;
+//		var pos = transform.position;
+//
+//		if (Mathf.Abs (pos.x) <= max) {
+//			pos.x += speed * Time.deltaTime * minus;
+//		} 
+//		else 
+//		{
+//			pos.x = max * minus;
+//			minus = minus * -1f;
+//
+//
+//		}
+//
+//		transform.position = pos;
 
-		if (Mathf.Abs (pos.x) <= max) {
-			pos.x += speed * Time.deltaTime * minus;
-		} 
-		else 
-		{
-			pos.x = max * minus;
-			minus = minus * -1f;
+		float rotation = speed * Time.deltaTime;
 
+		var angle = transform.rotation.z;
+		if (angle <= max) {
+//			rotation = 
 
 		}
 
-		transform.position = pos;
+		transform.Rotate (0f, 0f, rotation);
 	
 	}
 }

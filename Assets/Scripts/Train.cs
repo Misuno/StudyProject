@@ -10,10 +10,11 @@ public class Train : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		var pos = transform.position;
-		pos.z += speed * Time.deltaTime;
-		transform.position = pos;
+	void Update () {	
+		
+		transform.Translate(Vector3.forward * Time.deltaTime * speed);
+
+
 	
 	}
 }

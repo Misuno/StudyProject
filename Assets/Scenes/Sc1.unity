@@ -167,7 +167,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 373494368}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06b4c20e4f5aa4660bb1e8072354890e, type: 3}
   m_Name: 
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 391953501}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06b4c20e4f5aa4660bb1e8072354890e, type: 3}
   m_Name: 
@@ -355,7 +355,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 765132166}
   - 114: {fileID: 765132165}
-  - 114: {fileID: 765132167}
   m_Layer: 0
   m_Name: Train
   m_TagString: Untagged
@@ -392,19 +391,6 @@ Transform:
   - {fileID: 391953502}
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!114 &765132167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 765132164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06b4c20e4f5aa4660bb1e8072354890e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  max: 0
 --- !u!1 &1103628999
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +471,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1103628999}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06b4c20e4f5aa4660bb1e8072354890e, type: 3}
   m_Name: 
@@ -645,7 +631,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1817162928}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06b4c20e4f5aa4660bb1e8072354890e, type: 3}
   m_Name: 
