@@ -13,9 +13,9 @@ public class Train : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		neededTime = Time.time + timeToMove;
-		finalRotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f,turnAngle, 0f));
-		currentRotation = transform.rotation;
+		// neededTime = Time.time + timeToMove;
+		// finalRotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f,turnAngle, 0f));
+		// currentRotation = transform.rotation;
 	}
 
 
@@ -25,27 +25,27 @@ public class Train : MonoBehaviour {
 		transform.Translate(Vector3.forward * Time.deltaTime * speed);
 
 		// Проверяем, можно ли уже поворачивать.
-		if (Time.time >= neededTime)
-		{
-			// Находим кватернион нового вращения.
-			var rotation = Quaternion.RotateTowards(transform.rotation, finalRotation, turnSpeed * Time.deltaTime); 
+	//	if (Time.time >= neededTime)
+	//	{
+	//		// Находим кватернион нового вращения.
+	//		var rotation = Quaternion.RotateTowards(transform.rotation, finalRotation, turnSpeed * Time.deltaTime); 
 
-			// Если новое вращение не отличается от текущего, значит вращение завершено
-			if (transform.rotation == rotation)
-			{
-				// Назначаем новое целевое вращение.
-				finalRotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f,turnAngle, 0f));
+	//		// Если новое вращение не отличается от текущего, значит вращение завершено
+	//		if (transform.rotation == rotation)
+	//		{
+	//			// Назначаем новое целевое вращение.
+	//			finalRotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f,turnAngle, 0f));
 
-				// Заводим таймер на новое время.
-				neededTime = Time.time + timeToMove;
-			}
+	//			// Заводим таймер на новое время.
+	//			neededTime = Time.time + timeToMove;
+	//		}
 			// Если вращение не завершено.
-			else 
-			{
+	//		else 
+	//		{
 				// Применяем вращение.
-				transform.rotation = rotation;
-			}
-		}
+	//			transform.rotation = rotation;
+	//		}
+	//	}
 
 //		// Проверяем, можно ли уже поворачивать.
 //		if (Time.time >= neededTime)
